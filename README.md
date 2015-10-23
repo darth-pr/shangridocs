@@ -53,6 +53,12 @@ should see the web app!
 # Query GeneCard for gene information
 `curl -X PUT -d "ALB" http://localhost:8181/shangridocs-services/services/genecard/query -H "Content-Type: text/plain" -H "Accept: application/json" -v`
 
+# Query MalaCard for human disease information
+curl -X PUT -d "hep" http://localhost:8080/shangridocs-services/services/malacard/query -H "Content-Type: text/plain" -H "Accept: application/json" -v
+
+# Query StringDB for
+curl -X PUT -d "Aatf" http://localhost:8080/shangridocs-services/services/stringdb/query -H "Content-Type: text/plain" -H "Accept: application/json" -v
+
 # License
 Shangridocs source code and project is licensed and released under the [Apache License v2.0]() 
 
